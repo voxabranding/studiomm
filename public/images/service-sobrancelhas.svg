@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <rect width="600" height="450" fill="#181A20" />
+  <!-- Efeito de iluminação radial âmbar/dourada -->
+  <circle cx="300" cy="225" r="220" fill="url(#amberGlow)" opacity="0.15" />
+  <g stroke="#C5A880" stroke-width="1.2" opacity="0.25">
+    <circle cx="300" cy="225" r="140" />
+    <circle cx="300" cy="225" r="180" stroke-dasharray="4 6" />
+    <line x1="100" y1="225" x2="500" y2="225" />
+    <line x1="300" y1="60" x2="300" y2="390" />
+  </g>
+  <!-- Ilustração da Sobrancelha Fio a Fio com Caneta Tebori / Demógrafo -->
+  <g transform="translate(140, 160)">
+    <!-- Base sutil -->
+    <path d="M40 90 Q 160 30, 280 80" stroke="#AA8232" stroke-width="2.5" stroke-linecap="round" opacity="0.4" />
+    <!-- Fios hiper-realistas dourados -->
+    <path d="M40 90 Q44 65 52 45" stroke="#F2D696" stroke-width="2" stroke-linecap="round" />
+    <path d="M55 88 Q62 60 72 40" stroke="#F2D696" stroke-width="2" stroke-linecap="round" />
+    <path d="M72 86 Q82 56 95 38" stroke="#F2D696" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M92 84 Q105 52 122 36" stroke="#D4AF37" stroke-width="2.4" stroke-linecap="round" />
+    <path d="M115 82 Q132 50 152 35" stroke="#D4AF37" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M140 80 Q160 50 185 36" stroke="#F2D696" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M168 80 Q192 52 218 42" stroke="#D4AF37" stroke-width="2.4" stroke-linecap="round" />
+    <path d="M198 82 Q224 58 248 52" stroke="#AA8232" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M228 84 Q252 68 274 66" stroke="#C5A880" stroke-width="1.8" stroke-linecap="round" />
+  </g>
+  <!-- Caneta Tebori / Demógrafo de precisão -->
+  <g transform="translate(360, 90) rotate(35)">
+    <rect x="-6" y="0" width="12" height="150" rx="6" fill="url(#metalGrad)" />
+    <polygon points="-6,150 6,150 0,175" fill="#E5C399" />
+    <circle cx="0" cy="180" r="1.5" fill="#FFFFFF" />
+  </g>
+  <text x="300" y="375" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#E5C399" text-anchor="middle">
+    NANOBLADING HIPER-REALISTA
+  </text>
+  <defs>
+    <radialGradient id="amberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="metalGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3A3D46" />
+      <stop offset="50%" stop-color="#5E6370" />
+      <stop offset="100%" stop-color="#24262C" />
+    </linearGradient>
+  </defs>
+</svg>

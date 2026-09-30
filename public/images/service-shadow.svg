@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <rect width="600" height="450" fill="#181A20" />
+  <circle cx="300" cy="225" r="220" fill="url(#shadowGlow)" opacity="0.15" />
+  <!-- Degradê de micropigmentação shadow em arco elegante -->
+  <g transform="translate(150, 160)">
+    <path d="M20 70 Q 150 15, 280 65 Q 150 35, 20 70 Z" fill="url(#shadowPowderGrad)" filter="url(#powderBlur)" />
+    <path d="M20 70 Q 150 15, 280 65" stroke="#E5C399" stroke-width="1.8" stroke-linecap="round" opacity="0.7" />
+    <path d="M40 75 Q 150 35, 260 70" stroke="#C5A880" stroke-width="1.2" stroke-linecap="round" opacity="0.5" />
+  </g>
+  <text x="300" y="375" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#E5C399" text-anchor="middle">
+    SHADOW LINE • EFEITO PÓ DEGRADÊ
+  </text>
+  <defs>
+    <radialGradient id="shadowGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C5A880" />
+      <stop offset="100%" stop-color="#C5A880" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="shadowPowderGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E5C399" stop-opacity="0.3" />
+      <stop offset="50%" stop-color="#D4AF37" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#9A7528" stop-opacity="0.4" />
+    </linearGradient>
+    <filter id="powderBlur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
+</svg>

@@ -88,20 +88,31 @@ export default function BeforeAfter() {
                 aria-valuetext={`${Math.round(sliderPos)}% da imagem depois visível`}
                 onKeyDown={handleKeyDown}
               >
-                <div className="before-after__img before-after__img--before">
-                  <ImagePlaceholder text="Antes" bgColor="#D9C3A0" style={{ height: '100%' }} />
-                </div>
-                <span className="before-after__label before-after__label--before">ANTES</span>
+                {/* Imagem "Antes" (camada base) */}
+                <img
+                  src={config.beforeImage || '/images/antes.jpg'}
+                  alt={config.beforeLabel || 'Antes do procedimento'}
+                  className="before-after__img before-after__img--before"
+                  loading="lazy"
+                />
+                <span className="before-after__label before-after__label--before">
+                  {config.beforeLabel || 'ANTES'}
+                </span>
 
                 {/* Imagem "Depois" (camada superior recortada) */}
                 <div
                   className="before-after__after-wrapper"
                   style={{ clipPath: `polygon(0 0, ${sliderPos}% 0, ${sliderPos}% 100%, 0 100%)` }}
                 >
-                  <div className="before-after__img before-after__img--after">
-                    <ImagePlaceholder text="Depois" bgColor="#FAF7F1" style={{ height: '100%' }} />
-                  </div>
-                  <span className="before-after__label before-after__label--after">DEPOIS</span>
+                  <img
+                    src={config.afterImage || '/images/depois.jpg'}
+                    alt={config.afterLabel || 'Depois do procedimento'}
+                    className="before-after__img before-after__img--after"
+                    loading="lazy"
+                  />
+                  <span className="before-after__label before-after__label--after">
+                    {config.afterLabel || 'DEPOIS'}
+                  </span>
                 </div>
 
                 {/* Linha divisória e manípulo (handle) */}

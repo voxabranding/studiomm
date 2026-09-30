@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none">
+  <rect width="600" height="450" fill="#181A20" />
+  <circle cx="300" cy="225" r="220" fill="url(#spaGlow)" opacity="0.15" />
+  <!-- Ícone de Spa Facial & Purificação -->
+  <g transform="translate(240, 130)">
+    <!-- Gotículas de hidratação e esferas de renovação -->
+    <path d="M60 20 C60 20, 10 90, 10 130 A50 50 0 0 0 110 130 C110 90, 60 20, 60 20 Z" 
+          stroke="url(#goldSpaGrad)" stroke-width="2.5" fill="rgba(197, 168, 128, 0.08)" />
+    <path d="M60 55 C60 55, 35 95, 35 120 A25 25 0 0 0 85 120 C85 95, 60 55, 60 55 Z" 
+          fill="url(#goldSpaGrad)" opacity="0.3" />
+    <circle cx="95" cy="45" r="8" fill="#E5C399" opacity="0.5" />
+    <circle cx="20" cy="50" r="5" fill="#E5C399" opacity="0.4" />
+  </g>
+  <text x="300" y="375" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#E5C399" text-anchor="middle">
+    SPA FACIAL &amp; LIMPEZA PROFUNDA
+  </text>
+  <defs>
+    <radialGradient id="spaGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4E7C79" />
+      <stop offset="100%" stop-color="#181A20" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldSpaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F2D696" />
+      <stop offset="100%" stop-color="#9A7528" />
+    </linearGradient>
+  </defs>
+</svg>

@@ -9,10 +9,10 @@ export default function Results() {
   const results = siteConfig.results && siteConfig.results.length > 0 
     ? siteConfig.results 
     : [
-        { title: 'Mega Hair 1', category: 'MEGA HAIR' },
-        { title: 'Mega Hair 2', category: 'MEGA HAIR' },
-        { title: 'Unhas Gel 1', category: 'ALONGAMENTO' },
-        { title: 'Unhas Gel 2', category: 'ALONGAMENTO' },
+        { title: 'Micropigmentação Fio a Fio', category: 'FIO A FIO' },
+        { title: 'Micropigmentação Shadow', category: 'SHADOW LINE' },
+        { title: 'Revitalização Labial', category: 'LÁBIOS' },
+        { title: 'Design com Visagismo', category: 'VISAGISMO' },
       ];
 
   return (

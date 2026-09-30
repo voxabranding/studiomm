@@ -1,19 +1,21 @@
 import React from 'react';
+import { siteConfig } from '../../config/siteConfig';
 import './ServicesMarquee.css';
 
 export default function ServicesMarquee() {
-  // Uma lista de serviços para o letreiro baseados na imagem
-  const services = [
-    'Manicure',
-    'Pedicure',
-    'Esmaltação em Gel',
-    'Blindagem',
-    'Banho de Gel',
-    'Alongamento Molde F1',
-    'Fibra de Vidro',
-    'Spa dos Pés',
-    'Nail Art'
-  ];
+  const services = siteConfig.marqueeItems && siteConfig.marqueeItems.length > 0
+    ? siteConfig.marqueeItems
+    : [
+        'Micropigmentação Fio a Fio',
+        'Design de Sobrancelhas Visagista',
+        'Revitalização Labial',
+        'Spa Facial & Limpeza Profunda',
+        'Efeito Shadow Line',
+        'Neutralização de Lábios Escuros',
+        'Atendimento Masculino & Feminino',
+        'Formação Profissional PMU',
+        'Autoestima & Naturalidade'
+      ];
 
   // Duplicamos a lista algumas vezes para garantir o loop contínuo perfeito na tela inteira
   const marqueeItems = [...services, ...services, ...services, ...services];

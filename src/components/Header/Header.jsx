@@ -40,7 +40,7 @@ export default function Header() {
       >
         <div className="header__container container">
           <div className="header__inner">
-            <a href="#" className="header__logo" aria-label="Raiz Beleza & Estética — Início">
+            <a href="#" className="header__logo" aria-label={`${siteConfig.brand.name} — Início`}>
               <img
                 src={siteConfig.brand.logo}
                 alt={`Logotipo ${siteConfig.brand.name}`}

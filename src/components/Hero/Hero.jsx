@@ -7,7 +7,7 @@ export default function Hero() {
   const { hero, brand } = siteConfig;
 
   return (
-    <section className="hero" id="inicio" aria-label="Apresentação da Raiz Beleza & Estética">
+    <section className="hero" id="inicio" aria-label={`Apresentação de ${brand.name}`}>
       <div className="hero__container container">
         <div className="hero__card floating-panel">
           {/* Ilustrações Botânicas em SVG sutil */}

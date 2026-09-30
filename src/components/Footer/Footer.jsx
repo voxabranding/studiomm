@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="footer__brand">
           <img
             src={brand.logo}
-            alt="Logotipo Raiz Beleza & Estética"
+            alt={`Logotipo ${brand.name}`}
             className="footer__logo"
             width={120}
             height={56}
@@ -46,7 +46,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="footer__link"
-              aria-label="Instagram da Raiz"
+              aria-label={`Instagram de ${brand.shortName}`}
             >
               Instagram {contact.instagramHandle}
             </a>
@@ -55,7 +55,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               className="footer__link"
-              aria-label="WhatsApp da Raiz"
+              aria-label={`WhatsApp de ${brand.shortName}`}
             >
               WhatsApp
             </a>

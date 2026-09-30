@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <!-- Fundo com iluminação radiante de alta definição -->
+  <defs>
+    <radialGradient id="skinGlowAfter" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#F2E6DA" />
+      <stop offset="60%" stop-color="#E2D1C2" />
+      <stop offset="100%" stop-color="#D1BCAB" />
+    </radialGradient>
+    <linearGradient id="skinTextureAfter" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#C5A880" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#skinGlowAfter)" />
+  <rect width="800" height="500" fill="url(#skinTextureAfter)" />
+
+  <!-- Marca d'água / etiqueta estilizada -->
+  <g opacity="0.6">
+    <text x="40" y="70" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" letter-spacing="4" fill="#8A6B48">
+      STUDIO MM • MICROPIGMENTAÇÃO FIO A FIO
+    </text>
+    <text x="40" y="92" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#5A4736">
+      Preenchimento hiper-realista, visagismo aprovado e caimento perfeito
+    </text>
+  </g>
+
+  <!-- Pálpebra e contorno sutil dos olhos para contextualização anatômica -->
+  <path d="M120 380 Q 320 310, 520 390" stroke="#B39782" stroke-width="2" fill="none" opacity="0.35" />
+  <path d="M160 360 Q 320 325, 480 370" stroke="#CBB5A1" stroke-width="1.5" fill="none" opacity="0.4" />
+
+  <!-- Sombra de fundo suave (Shadow Line degradê imperceptível) -->
+  <path d="M175 235 C 260 215, 360 205, 490 270 C 440 250, 320 220, 180 250 Z" 
+        fill="#7A5D45" opacity="0.15" filter="url(#softGlow)" />
+
+  <!-- Pelos naturais originais + Fios Nanoblading de precisão artística -->
+  <g stroke="#2C1F17" stroke-linecap="round">
+    <!-- Início natural com fios finos e ascendentes -->
+    <path d="M176 252 Q180 230 185 208" stroke-width="1.6" opacity="0.85" />
+    <path d="M182 254 Q186 226 192 202" stroke-width="1.8" opacity="0.9" />
+    <path d="M190 256 Q194 224 200 198" stroke-width="2" />
+    <path d="M198 256 Q204 222 212 195" stroke-width="2.2" />
+    <path d="M206 257 Q214 222 224 194" stroke-width="2.4" />
+    <path d="M216 257 Q224 220 236 193" stroke-width="2.3" />
+    <path d="M225 258 Q235 218 250 192" stroke-width="2.4" />
+
+    <!-- Corpo com fios entrelaçados em espinha de peixe (técnica avançada hiper-realista) -->
+    <path d="M236 258 Q248 218 266 193" stroke-width="2.4" />
+    <path d="M246 258 Q260 220 280 194" stroke-width="2.5" />
+    <path d="M258 257 Q274 222 296 197" stroke-width="2.4" />
+    
+    <!-- Fios que cobriram totalmente a falha central -->
+    <path d="M270 256 Q288 224 312 200" stroke-width="2.3" stroke="#3D291D" />
+    <path d="M282 255 Q302 226 328 204" stroke-width="2.3" stroke="#2C1F17" />
+    <path d="M295 254 Q316 228 344 208" stroke-width="2.2" />
+    <path d="M308 253 Q330 230 360 212" stroke-width="2.2" />
+    
+    <!-- Ponto alto (arqueamento harmonioso unissex) -->
+    <path d="M322 252 Q346 232 376 216" stroke-width="2.2" />
+    <path d="M336 251 Q362 234 392 220" stroke-width="2.2" />
+    <path d="M352 250 Q378 236 408 225" stroke-width="2.1" />
+    <path d="M368 251 Q395 238 424 231" stroke-width="2.0" />
+    <path d="M384 252 Q412 242 440 238" stroke-width="1.9" />
+
+    <!-- Cauda alongada e perfeitamente definida -->
+    <path d="M400 254 Q428 246 454 245" stroke-width="1.8" />
+    <path d="M416 256 Q442 250 468 252" stroke-width="1.7" />
+    <path d="M432 259 Q455 255 480 260" stroke-width="1.6" />
+    <path d="M448 263 Q468 261 490 268" stroke-width="1.4" opacity="0.8" />
+    <path d="M462 267 Q478 266 498 274" stroke-width="1.2" opacity="0.7" />
+  </g>
+
+  <!-- Tag de status estilizada -->
+  <g transform="translate(600, 40)">
+    <rect width="160" height="34" rx="17" fill="#B3975B" />
+    <text x="80" y="22" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+      DEPOIS (FIO A FIO)
+    </text>
+  </g>
+</svg>
